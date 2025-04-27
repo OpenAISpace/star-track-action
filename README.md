@@ -1,306 +1,189 @@
-# Create a GitHub Action Using TypeScript
+# GitHub Star Stats Action
 
-[![GitHub Super-Linter](https://github.com/actions/typescript-action/actions/workflows/linter.yml/badge.svg)](https://github.com/super-linter/super-linter)
-![CI](https://github.com/actions/typescript-action/actions/workflows/ci.yml/badge.svg)
-[![Check dist/](https://github.com/actions/typescript-action/actions/workflows/check-dist.yml/badge.svg)](https://github.com/actions/typescript-action/actions/workflows/check-dist.yml)
-[![CodeQL](https://github.com/actions/typescript-action/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/actions/typescript-action/actions/workflows/codeql-analysis.yml)
-[![Coverage](./badges/coverage.svg)](./badges/coverage.svg)
+这个GitHub Action可以为您的README文件自动生成一个统计卡片，展示您的GitHub贡献数据，包括：
 
-Use this template to bootstrap the creation of a TypeScript action. :rocket:
+- 星标数量
+- 提交数量
+- 议题数量
+- 拉取请求数量
+- 仓库数量
 
-This template includes compilation support, tests, a validation workflow,
-publishing, and versioning guidance.
+## 示例
 
-If you are new, there's also a simpler introduction in the
-[Hello world JavaScript action repository](https://github.com/actions/hello-world-javascript-action).
+<!-- BEGIN_GITHUB_STATS -->
+<div align="center">
 
-## Create Your Own Action
+## GitHub Stats
 
-To create your own action, you can use this repository as a template! Just
-follow the below instructions:
+<table>
+  <tr>
+    <td align="center" colspan="4">
+      <img alt="GitHub评级" src="https://img.shields.io/badge/Grade-S+-FB2?style=for-the-badge&logo=github&logoColor=white" />
+      <img alt="GitHub分数" src="https://img.shields.io/badge/Score-1691-FB2?style=for-the-badge&logo=github&logoColor=white" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img alt="用户" src="https://img.shields.io/badge/User-liyown-2D9EF1?style=for-the-badge&logo=github&logoColor=white" />
+    </td>
+    <td align="center">
+      <img alt="关注者" src="https://img.shields.io/badge/Followers-16-2D9EF1?style=for-the-badge&logo=github&logoColor=white" />
+    </td>
+    <td align="center">
+      <img alt="活跃时间" src="https://img.shields.io/badge/Years_Active-4.2-2D9EF1?style=for-the-badge&logo=github&logoColor=white" />
+    </td>
+    <td align="center">
+      <img alt="贡献仓库" src="https://img.shields.io/badge/Contributed_To-21-2D9EF1?style=for-the-badge&logo=github&logoColor=white" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img alt="仓库数量" src="https://img.shields.io/badge/Repositories-48-26A641?style=for-the-badge&logo=github&logoColor=white" />
+    </td>
+    <td align="center">
+      <img alt="获得的星标数" src="https://img.shields.io/badge/Stars-1628-FFD94C?style=for-the-badge&logo=github&logoColor=black" />
+    </td>
+    <td align="center">
+      <img alt="Fork数" src="https://img.shields.io/badge/Forked-227-26A641?style=for-the-badge&logo=github&logoColor=white" />
+    </td>
+    <td align="center">
+      <img alt="被Watch数" src="https://img.shields.io/badge/Watched-1628-26A641?style=for-the-badge&logo=github&logoColor=white" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img alt="提交数量" src="https://img.shields.io/badge/Commits-675-2188FF?style=for-the-badge&logo=git&logoColor=white" />
+    </td>
+    <td align="center">
+      <img alt="议题数量" src="https://img.shields.io/badge/Issues-16-F74D53?style=for-the-badge&logo=github&logoColor=white" />
+    </td>
+    <td align="center">
+      <img alt="拉取请求数量" src="https://img.shields.io/badge/Pull_Requests-1-A371F7?style=for-the-badge&logo=github&logoColor=white" />
+    </td>
+    <td align="center">
+      <img alt="主要语言" src="https://img.shields.io/badge/Top_Language-Python-2188FF?style=for-the-badge&logo=github&logoColor=white" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img alt="每仓库提交" src="https://img.shields.io/badge/Commits_Per_Repo-14-2188FF?style=for-the-badge&logo=git&logoColor=white" />
+    </td>
+    <td align="center">
+      <img alt="每仓库星标" src="https://img.shields.io/badge/Stars_Per_Repo-33.9-FFD94C?style=for-the-badge&logo=github&logoColor=black" />
+    </td>
+    <td align="center">
+      <img alt="Issue关闭率" src="https://img.shields.io/badge/Issue_Close_Rate-50%-F74D53?style=for-the-badge&logo=github&logoColor=white" />
+    </td>
+    <td align="center">
+      <img alt="PR合并率" src="https://img.shields.io/badge/PR_Merge_Rate-100%-A371F7?style=for-the-badge&logo=github&logoColor=white" />
+    </td>
+  </tr>
+</table>
 
-1. Click the **Use this template** button at the top of the repository
-1. Select **Create a new repository**
-1. Select an owner and name for your new repository
-1. Click **Create repository**
-1. Clone your new repository
+<sup>📅 统计更新于: 2025/04/27</sup>
 
-> [!IMPORTANT]
->
-> Make sure to remove or update the [`CODEOWNERS`](./CODEOWNERS) file! For
-> details on how to use this file, see
-> [About code owners](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners).
+</div>
+<!-- END_GITHUB_STATS -->
 
-## Initial Setup
+## 使用方法
 
-After you've cloned the repository to your local machine or codespace, you'll
-need to perform some initial setup steps before you can develop your action.
+### 基本使用
 
-> [!NOTE]
->
-> You'll need to have a reasonably modern version of
-> [Node.js](https://nodejs.org) handy (20.x or later should work!). If you are
-> using a version manager like [`nodenv`](https://github.com/nodenv/nodenv) or
-> [`fnm`](https://github.com/Schniz/fnm), this template has a `.node-version`
-> file at the root of the repository that can be used to automatically switch to
-> the correct version when you `cd` into the repository. Additionally, this
-> `.node-version` file is used by GitHub Actions in any `actions/setup-node`
-> actions.
-
-1. :hammer_and_wrench: Install the dependencies
-
-   ```bash
-   npm install
-   ```
-
-1. :building_construction: Package the TypeScript for distribution
-
-   ```bash
-   npm run bundle
-   ```
-
-1. :white_check_mark: Run the tests
-
-   ```bash
-   $ npm test
-
-   PASS  ./index.test.js
-     ✓ throws invalid number (3ms)
-     ✓ wait 500 ms (504ms)
-     ✓ test runs (95ms)
-
-   ...
-   ```
-
-## Update the Action Metadata
-
-The [`action.yml`](action.yml) file defines metadata about your action, such as
-input(s) and output(s). For details about this file, see
-[Metadata syntax for GitHub Actions](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions).
-
-When you copy this repository, update `action.yml` with the name, description,
-inputs, and outputs for your action.
-
-## Update the Action Code
-
-The [`src/`](./src/) directory is the heart of your action! This contains the
-source code that will be run when your action is invoked. You can replace the
-contents of this directory with your own code.
-
-There are a few things to keep in mind when writing your action code:
-
-- Most GitHub Actions toolkit and CI/CD operations are processed asynchronously.
-  In `main.ts`, you will see that the action is run in an `async` function.
-
-  ```javascript
-  import * as core from '@actions/core'
-  //...
-
-  async function run() {
-    try {
-      //...
-    } catch (error) {
-      core.setFailed(error.message)
-    }
-  }
-  ```
-
-  For more information about the GitHub Actions toolkit, see the
-  [documentation](https://github.com/actions/toolkit/blob/master/README.md).
-
-So, what are you waiting for? Go ahead and start customizing your action!
-
-1. Create a new branch
-
-   ```bash
-   git checkout -b releases/v1
-   ```
-
-1. Replace the contents of `src/` with your action code
-1. Add tests to `__tests__/` for your source code
-1. Format, test, and build the action
-
-   ```bash
-   npm run all
-   ```
-
-   > This step is important! It will run [`rollup`](https://rollupjs.org/) to
-   > build the final JavaScript action code with all dependencies included. If
-   > you do not run this step, your action will not work correctly when it is
-   > used in a workflow.
-
-1. (Optional) Test your action locally
-
-   The [`@github/local-action`](https://github.com/github/local-action) utility
-   can be used to test your action locally. It is a simple command-line tool
-   that "stubs" (or simulates) the GitHub Actions Toolkit. This way, you can run
-   your TypeScript action locally without having to commit and push your changes
-   to a repository.
-
-   The `local-action` utility can be run in the following ways:
-
-   - Visual Studio Code Debugger
-
-     Make sure to review and, if needed, update
-     [`.vscode/launch.json`](./.vscode/launch.json)
-
-   - Terminal/Command Prompt
-
-     ```bash
-     # npx @github/local action <action-yaml-path> <entrypoint> <dotenv-file>
-     npx @github/local-action . src/main.ts .env
-     ```
-
-   You can provide a `.env` file to the `local-action` CLI to set environment
-   variables used by the GitHub Actions Toolkit. For example, setting inputs and
-   event payload data used by your action. For more information, see the example
-   file, [`.env.example`](./.env.example), and the
-   [GitHub Actions Documentation](https://docs.github.com/en/actions/learn-github-actions/variables#default-environment-variables).
-
-1. Commit your changes
-
-   ```bash
-   git add .
-   git commit -m "My first action is ready!"
-   ```
-
-1. Push them to your repository
-
-   ```bash
-   git push -u origin releases/v1
-   ```
-
-1. Create a pull request and get feedback on your action
-1. Merge the pull request into the `main` branch
-
-Your action is now published! :rocket:
-
-For information about versioning your action, see
-[Versioning](https://github.com/actions/toolkit/blob/master/docs/action-versioning.md)
-in the GitHub Actions toolkit.
-
-## Validate the Action
-
-You can now validate the action by referencing it in a workflow file. For
-example, [`ci.yml`](./.github/workflows/ci.yml) demonstrates how to reference an
-action in the same repository.
+创建一个工作流文件 `.github/workflows/github-stats.yml`：
 
 ```yaml
-steps:
-  - name: Checkout
-    id: checkout
-    uses: actions/checkout@v4
+name: Update GitHub Stats
 
-  - name: Test Local Action
-    id: test-action
-    uses: ./
-    with:
-      milliseconds: 1000
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 每天运行一次
+  workflow_dispatch:     # 允许手动触发
 
-  - name: Print Output
-    id: output
-    run: echo "${{ steps.test-action.outputs.time }}"
-```
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Update GitHub Stats
+        uses: your-username/star-track-action@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          username: ${{ github.repository_owner }}
+          
+      # 注意：不再需要手动提交步骤，Action 会自动提交更改
 
-For example workflow runs, check out the
-[Actions tab](https://github.com/actions/typescript-action/actions)! :rocket:
-
-## Usage
-
-After testing, you can create version tag(s) that developers can use to
-reference different stable versions of your action. For more information, see
-[Versioning](https://github.com/actions/toolkit/blob/master/docs/action-versioning.md)
-in the GitHub Actions toolkit.
-
-To include the action in a workflow in another repository, you can use the
-`uses` syntax with the `@` symbol to reference a specific branch, tag, or commit
-hash.
+### 高级配置
 
 ```yaml
-steps:
-  - name: Checkout
-    id: checkout
-    uses: actions/checkout@v4
-
-  - name: Test Local Action
-    id: test-action
-    uses: actions/typescript-action@v1 # Commit with the `v1` tag
-    with:
-      milliseconds: 1000
-
-  - name: Print Output
-    id: output
-    run: echo "${{ steps.test-action.outputs.time }}"
+- name: Update GitHub Stats
+  uses: your-username/star-track-action@v1
+  with:
+    github_token: ${{ secrets.GITHUB_TOKEN }}  # 需要有提交权限的token
+    username: your-username
+    scope: all             # 'personal' 或 'all'（包括组织），默认为 'personal'
+    readme_path: README.md # README文件路径，默认为 'README.md'
+    card_title: 我的GitHub统计  # 卡片标题，默认为 'GitHub Stats'
+    concurrency: 3         # 并发处理的仓库数量，默认为5，范围1-10
 ```
 
-## Publishing a New Release
+### 关于性能优化
 
-This project includes a helper script, [`script/release`](./script/release)
-designed to streamline the process of tagging and pushing new releases for
-GitHub Actions.
+此Action使用并发处理来加速统计过程，特别适用于拥有大量仓库的用户：
 
-GitHub Actions allows users to select a specific version of the action to use,
-based on release tags. This script simplifies this process by performing the
-following steps:
+1. 默认情况下，Action会同时处理5个仓库的数据
+2. 您可以通过`concurrency`参数调整并发数（1-10）
+3. 较高的并发数会加快处理速度，但可能触发GitHub API速率限制
+4. 对于拥有少量仓库的用户，建议使用默认值
+5. 对于拥有大量仓库（50+）的用户，可以考虑降低并发数至3，以避免API限制
 
-1. **Retrieving the latest release tag:** The script starts by fetching the most
-   recent SemVer release tag of the current branch, by looking at the local data
-   available in your repository.
-1. **Prompting for a new release tag:** The user is then prompted to enter a new
-   release tag. To assist with this, the script displays the tag retrieved in
-   the previous step, and validates the format of the inputted tag (vX.X.X). The
-   user is also reminded to update the version field in package.json.
-1. **Tagging the new release:** The script then tags a new release and syncs the
-   separate major tag (e.g. v1, v2) with the new release tag (e.g. v1.0.0,
-   v2.1.2). When the user is creating a new major release, the script
-   auto-detects this and creates a `releases/v#` branch for the previous major
-   version.
-1. **Pushing changes to remote:** Finally, the script pushes the necessary
-   commits, tags and branches to the remote repository. From here, you will need
-   to create a new release in GitHub so users can easily reference the new tags
-   in their workflows.
+### 关于自动提交
 
-## Dependency License Management
+此Action包含自动提交功能，会自动将更新后的统计卡片提交到您的仓库。请注意：
 
-This template includes a GitHub Actions workflow,
-[`licensed.yml`](./.github/workflows/licensed.yml), that uses
-[Licensed](https://github.com/licensee/licensed) to check for dependencies with
-missing or non-compliant licenses. This workflow is initially disabled. To
-enable the workflow, follow the below steps.
+1. 您需要提供有写入权限的GitHub令牌。使用默认的`GITHUB_TOKEN`时，您可能需要在仓库设置中授予"写入权限"。
+2. 如果您希望在受保护的分支上提交，请调整分支保护规则以允许GitHub Actions提交。
+3. 每次统计数据更新时，Action会自动创建一次提交。
 
-1. Open [`licensed.yml`](./.github/workflows/licensed.yml)
-1. Uncomment the following lines:
+如果自动提交失败，您可以查看Action日志获取错误信息，也可以添加手动提交步骤作为备选方案。
 
-   ```yaml
-   # pull_request:
-   #   branches:
-   #     - main
-   # push:
-   #   branches:
-   #     - main
-   ```
+## 输入参数
 
-1. Save and commit the changes
+| 参数名 | 描述 | 必填 | 默认值 |
+|--------|------|------|--------|
+| `github_token` | GitHub token，用于访问API | 是 | - |
+| `username` | GitHub用户名 | 是 | - |
+| `scope` | 统计范围：'personal'表示个人仓库，'all'表示包括组织在内的所有仓库 | 否 | `personal` |
+| `readme_path` | README文件路径 | 否 | `README.md` |
+| `card_title` | 统计卡片的标题 | 否 | `GitHub Stats` |
+| `concurrency` | 并发处理的仓库数量 | 否 | `5` |
 
-Once complete, this workflow will run any time a pull request is created or
-changes pushed directly to `main`. If the workflow detects any dependencies with
-missing or non-compliant licenses, it will fail the workflow and provide details
-on the issue(s) found.
+## 输出参数
 
-### Updating Licenses
+| 参数名 | 描述 |
+|--------|------|
+| `stars_count` | 获得的星标总数 |
+| `commits_count` | 提交总数 |
+| `issues_count` | 创建的议题总数 |
+| `prs_count` | 创建的拉取请求总数 |
+| `repositories_count` | 仓库总数 |
+| `followers_count` | 关注者数量 |
+| `following_count` | 关注的用户数量 |
+| `contributed_to_count` | 贡献的仓库数量 |
+| `top_language` | 最常用的编程语言 |
+| `days_active` | 活跃天数 |
+| `developer_grade` | 开发者等级（D-到SSS） |
+| `developer_score` | 开发者分数 |
+| `issue_close_rate` | Issue关闭率（百分比） |
+| `pr_merge_rate` | PR合并率（百分比） |
+| `execution_time` | 执行时间（秒） |
 
-Whenever you install or update dependencies, you can use the Licensed CLI to
-update the licenses database. To install Licensed, see the project's
-[Readme](https://github.com/licensee/licensed?tab=readme-ov-file#installation).
+## 注意事项
 
-To update the cached licenses, run the following command:
+1. 此Action需要访问GitHub API，对于大型仓库或很多仓库的用户，可能会触发API速率限制。
+2. 对于私有仓库的统计，您可能需要使用具有更高权限的Personal Access Token。
+3. 如果您想在组织中使用此Action，确保令牌有足够的权限访问组织仓库。
 
-```bash
-licensed cache
-```
+## 许可证
 
-To check the status of cached licenses, run the following command:
-
-```bash
-licensed status
-```
+MIT
