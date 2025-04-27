@@ -19,7 +19,7 @@
   <tr>
     <td align="center" colspan="4">
       <img alt="GitHub评级" src="https://img.shields.io/badge/Grade-S+-FB2?style=for-the-badge&logo=github&logoColor=white" />
-      <img alt="GitHub分数" src="https://img.shields.io/badge/Score-1689-FB2?style=for-the-badge&logo=github&logoColor=white" />
+      <img alt="GitHub分数" src="https://img.shields.io/badge/Score-1692-FB2?style=for-the-badge&logo=github&logoColor=white" />
     </td>
   </tr>
   <tr>
@@ -55,10 +55,10 @@
       <img alt="提交数量" src="https://img.shields.io/badge/Commits-658-2188FF?style=for-the-badge&logo=git&logoColor=white" />
     </td>
     <td align="center">
-      <img alt="议题数量" src="https://img.shields.io/badge/Issues-16-F74D53?style=for-the-badge&logo=github&logoColor=white" />
+      <img alt="议题数量" src="https://img.shields.io/badge/Issues-44-F74D53?style=for-the-badge&logo=github&logoColor=white" />
     </td>
     <td align="center">
-      <img alt="拉取请求数量" src="https://img.shields.io/badge/Pull_Requests-1-A371F7?style=for-the-badge&logo=github&logoColor=white" />
+      <img alt="拉取请求数量" src="https://img.shields.io/badge/Pull_Requests-9-A371F7?style=for-the-badge&logo=github&logoColor=white" />
     </td>
     <td align="center">
       <img alt="主要语言" src="https://img.shields.io/badge/Top_Language-Python-2188FF?style=for-the-badge&logo=github&logoColor=white" />
@@ -72,10 +72,10 @@
       <img alt="每仓库星标" src="https://img.shields.io/badge/Stars_Per_Repo-33.9-FFD94C?style=for-the-badge&logo=github&logoColor=black" />
     </td>
     <td align="center">
-      <img alt="Issue关闭率" src="https://img.shields.io/badge/Issue_Close_Rate-50%25-F74D53?style=for-the-badge&logo=github&logoColor=white" />
+      <img alt="Issue关闭率" src="https://img.shields.io/badge/Issue_Close_Rate-73%25-F74D53?style=for-the-badge&logo=github&logoColor=white" />
     </td>
     <td align="center">
-      <img alt="PR合并率" src="https://img.shields.io/badge/PR_Merge_Rate-100%25-A371F7?style=for-the-badge&logo=github&logoColor=white" />
+      <img alt="PR合并率" src="https://img.shields.io/badge/PR_Merge_Rate-89%25-A371F7?style=for-the-badge&logo=github&logoColor=white" />
     </td>
   </tr>
 </table>
