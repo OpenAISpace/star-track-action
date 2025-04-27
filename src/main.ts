@@ -170,7 +170,7 @@ async function getGitHubStats(
     starsPerRepo: 0,
     issueCloseRate: 0,
     prMergeRate: 0,
-    grade: '',
+    grade: 'D-', // 设置默认评级
     score: 0
   }
 
@@ -186,7 +186,7 @@ async function getGitHubStats(
     
     if (repos.length === 0) {
       core.warning(`未找到用户 ${username} 的任何仓库，请检查用户名是否正确且访问令牌权限是否足够`)
-      return calculateRating(stats)
+      return await calculateRating(stats)
     }
     
     core.info(`找到 ${repos.length} 个仓库，开始统计数据...`)
@@ -323,7 +323,7 @@ async function getGitHubStats(
     stats.prMergeRate = totalPRs > 0 ? (mergedPRs / totalPRs) * 100 : 0
     
     // 计算评级
-    return calculateRating(stats)
+    return await calculateRating(stats)
   } catch (error) {
     core.error(`获取GitHub统计信息出错: ${error instanceof Error ? error.message : String(error)}`)
     throw error
@@ -520,7 +520,7 @@ async function fetchMergedPRCount(
 /**
  * 计算用户评级
  */
-function calculateRating(stats: GitHubStats): GitHubStats {
+async function calculateRating(stats: GitHubStats): Promise<GitHubStats> {
   // 计算总分
   let score = 0
   
@@ -576,6 +576,11 @@ function calculateRating(stats: GitHubStats): GitHubStats {
       stats.grade = GRADE_RANGES[i].grade
       break
     }
+  }
+  
+  // 确保评级始终有默认值
+  if (!stats.grade) {
+    stats.grade = GRADE_RANGES[0].grade; // 使用最低级别的评级
   }
   
   core.info(`评分计算完成: ${score}分，等级: ${stats.grade}`)
