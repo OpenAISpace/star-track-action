@@ -19,7 +19,7 @@
   <tr>
     <td align="center" colspan="4">
       <img alt="GitHub评级" src="https://img.shields.io/badge/Grade-S+-FB2?style=for-the-badge&logo=github&logoColor=white" />
-      <img alt="GitHub分数" src="https://img.shields.io/badge/Score-1691-FB2?style=for-the-badge&logo=github&logoColor=white" />
+      <img alt="GitHub分数" src="https://img.shields.io/badge/Score-1689-FB2?style=for-the-badge&logo=github&logoColor=white" />
     </td>
   </tr>
   <tr>
@@ -52,7 +52,7 @@
   </tr>
   <tr>
     <td align="center">
-      <img alt="提交数量" src="https://img.shields.io/badge/Commits-675-2188FF?style=for-the-badge&logo=git&logoColor=white" />
+      <img alt="提交数量" src="https://img.shields.io/badge/Commits-658-2188FF?style=for-the-badge&logo=git&logoColor=white" />
     </td>
     <td align="center">
       <img alt="议题数量" src="https://img.shields.io/badge/Issues-16-F74D53?style=for-the-badge&logo=github&logoColor=white" />
@@ -72,10 +72,10 @@
       <img alt="每仓库星标" src="https://img.shields.io/badge/Stars_Per_Repo-33.9-FFD94C?style=for-the-badge&logo=github&logoColor=black" />
     </td>
     <td align="center">
-      <img alt="Issue关闭率" src="https://img.shields.io/badge/Issue_Close_Rate-50%-F74D53?style=for-the-badge&logo=github&logoColor=white" />
+      <img alt="Issue关闭率" src="https://img.shields.io/badge/Issue_Close_Rate-50%25-F74D53?style=for-the-badge&logo=github&logoColor=white" />
     </td>
     <td align="center">
-      <img alt="PR合并率" src="https://img.shields.io/badge/PR_Merge_Rate-100%-A371F7?style=for-the-badge&logo=github&logoColor=white" />
+      <img alt="PR合并率" src="https://img.shields.io/badge/PR_Merge_Rate-100%25-A371F7?style=for-the-badge&logo=github&logoColor=white" />
     </td>
   </tr>
 </table>
@@ -124,18 +124,7 @@ jobs:
     scope: all             # 'personal' 或 'all'（包括组织），默认为 'personal'
     readme_path: README.md # README文件路径，默认为 'README.md'
     card_title: 我的GitHub统计  # 卡片标题，默认为 'GitHub Stats'
-    concurrency: 3         # 并发处理的仓库数量，默认为5，范围1-10
 ```
-
-### 关于性能优化
-
-此Action使用并发处理来加速统计过程，特别适用于拥有大量仓库的用户：
-
-1. 默认情况下，Action会同时处理5个仓库的数据
-2. 您可以通过`concurrency`参数调整并发数（1-10）
-3. 较高的并发数会加快处理速度，但可能触发GitHub API速率限制
-4. 对于拥有少量仓库的用户，建议使用默认值
-5. 对于拥有大量仓库（50+）的用户，可以考虑降低并发数至3，以避免API限制
 
 ### 关于自动提交
 
@@ -156,34 +145,5 @@ jobs:
 | `scope` | 统计范围：'personal'表示个人仓库，'all'表示包括组织在内的所有仓库 | 否 | `personal` |
 | `readme_path` | README文件路径 | 否 | `README.md` |
 | `card_title` | 统计卡片的标题 | 否 | `GitHub Stats` |
-| `concurrency` | 并发处理的仓库数量 | 否 | `5` |
 
 ## 输出参数
-
-| 参数名 | 描述 |
-|--------|------|
-| `stars_count` | 获得的星标总数 |
-| `commits_count` | 提交总数 |
-| `issues_count` | 创建的议题总数 |
-| `prs_count` | 创建的拉取请求总数 |
-| `repositories_count` | 仓库总数 |
-| `followers_count` | 关注者数量 |
-| `following_count` | 关注的用户数量 |
-| `contributed_to_count` | 贡献的仓库数量 |
-| `top_language` | 最常用的编程语言 |
-| `days_active` | 活跃天数 |
-| `developer_grade` | 开发者等级（D-到SSS） |
-| `developer_score` | 开发者分数 |
-| `issue_close_rate` | Issue关闭率（百分比） |
-| `pr_merge_rate` | PR合并率（百分比） |
-| `execution_time` | 执行时间（秒） |
-
-## 注意事项
-
-1. 此Action需要访问GitHub API，对于大型仓库或很多仓库的用户，可能会触发API速率限制。
-2. 对于私有仓库的统计，您可能需要使用具有更高权限的Personal Access Token。
-3. 如果您想在组织中使用此Action，确保令牌有足够的权限访问组织仓库。
-
-## 许可证
-
-MIT
