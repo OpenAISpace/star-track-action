@@ -1,8 +1,7 @@
 # Star Track Action
 
 [![GitHub release](https://img.shields.io/github/v/release/OpenAISpace/star-track-action?style=flat-square)](https://github.com/OpenAISpace/star-track-action/releases)
-[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/OpenAISpace/star-track-action/ci.yml?branch=main&style=flat-square)](https://github.com/OpenAISpace/star-track-action/actions)
-[![GitHub license](https://img.shields.io/github/license/OpenAISpace/star-track-action?style=flat-square)](https://github.com/OpenAISpace/star-track-action/blob/main/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/OpenAISpace/star-track-action?style=flat-square)](https://github.com/OpenAISpace/star-track-action/LICENSE)
 
 这个GitHub Action可以为您的README文件自动生成一个精美的GitHub统计卡片，全面展示您的开源贡献和活动数据，包括：
 
