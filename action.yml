@@ -1,23 +1,65 @@
-name: The name of your action here
-description: Provide a description here
-author: Your name or organization here
+name: GitHub Star Stats
+description: Creates a card in README showing star, commit, issue and contribution statistics
+author: GitHub User
 
 # Add your action's branding here. This will appear on the GitHub Marketplace.
 branding:
-  icon: heart
-  color: red
+  icon: star
+  color: yellow
 
 # Define your inputs here.
 inputs:
-  milliseconds:
-    description: Your input description here
+  github_token:
+    description: 'GitHub token to access API'
     required: true
-    default: '1000'
+  username:
+    description: 'GitHub username'
+    required: true
+  scope:
+    description: 'Scope of statistics: "personal" for personal repositories only, "all" for all repositories including organizations'
+    required: false
+    default: 'personal'
+  readme_path:
+    description: 'Path to the README file to update'
+    required: false
+    default: 'README.md'
+  card_title:
+    description: 'Title of the statistics card'
+    required: false
+    default: 'GitHub Stats'
 
 # Define your outputs here.
 outputs:
-  time:
-    description: Your output description here
+  stars_count:
+    description: 'Total number of stars received'
+  commits_count:
+    description: 'Total number of commits'
+  issues_count:
+    description: 'Total number of issues created'
+  prs_count:
+    description: 'Total number of pull requests'
+  repositories_count:
+    description: 'Total number of repositories'
+  followers_count:
+    description: 'Number of followers'
+  following_count:
+    description: 'Number of accounts followed'
+  contributed_to_count:
+    description: 'Number of repositories contributed to'
+  top_language:
+    description: 'Most used programming language'
+  days_active:
+    description: 'Number of days since first repository'
+  developer_grade:
+    description: 'Developer grade (D- to SSS)'
+  developer_score:
+    description: 'Developer score (numeric value)'
+  issue_close_rate:
+    description: 'Percentage of issues closed'
+  pr_merge_rate:
+    description: 'Percentage of pull requests merged'
+  execution_time:
+    description: 'Time taken to execute the action in seconds'
 
 runs:
   using: node20
