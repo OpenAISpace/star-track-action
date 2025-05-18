@@ -22,7 +22,7 @@
   <tr>
     <td align="center" colspan="4">
       <img alt="GitHub评级" src="https://img.shields.io/badge/Grade-S+-FB2?style=for-the-badge&logo=github&logoColor=white" />
-      <img alt="GitHub分数" src="https://img.shields.io/badge/Score-1688-FB2?style=for-the-badge&logo=github&logoColor=white" />
+      <img alt="GitHub分数" src="https://img.shields.io/badge/Score-1694-FB2?style=for-the-badge&logo=github&logoColor=white" />
     </td>
   </tr>
   <tr>
@@ -44,13 +44,13 @@
       <img alt="仓库数量" src="https://img.shields.io/badge/Repositories-10-26A641?style=for-the-badge&logo=github&logoColor=white" />
     </td>
     <td align="center">
-      <img alt="获得的星标数" src="https://img.shields.io/badge/Stars-1609-FFD94C?style=for-the-badge&logo=github&logoColor=black" />
+      <img alt="获得的星标数" src="https://img.shields.io/badge/Stars-1619-FFD94C?style=for-the-badge&logo=github&logoColor=black" />
     </td>
     <td align="center">
-      <img alt="Fork数" src="https://img.shields.io/badge/Forked-230-26A641?style=for-the-badge&logo=github&logoColor=white" />
+      <img alt="Fork数" src="https://img.shields.io/badge/Forked-234-26A641?style=for-the-badge&logo=github&logoColor=white" />
     </td>
     <td align="center">
-      <img alt="被Watch数" src="https://img.shields.io/badge/Watched-1609-26A641?style=for-the-badge&logo=github&logoColor=white" />
+      <img alt="被Watch数" src="https://img.shields.io/badge/Watched-1619-26A641?style=for-the-badge&logo=github&logoColor=white" />
     </td>
   </tr>
   <tr>
@@ -58,7 +58,7 @@
       <img alt="提交数量" src="https://img.shields.io/badge/Commits-0-2188FF?style=for-the-badge&logo=git&logoColor=white" />
     </td>
     <td align="center">
-      <img alt="议题数量" src="https://img.shields.io/badge/Issues-40-F74D53?style=for-the-badge&logo=github&logoColor=white" />
+      <img alt="议题数量" src="https://img.shields.io/badge/Issues-43-F74D53?style=for-the-badge&logo=github&logoColor=white" />
     </td>
     <td align="center">
       <img alt="拉取请求数量" src="https://img.shields.io/badge/Pull_Requests-8-A371F7?style=for-the-badge&logo=github&logoColor=white" />
@@ -72,7 +72,7 @@
       <img alt="每仓库提交" src="https://img.shields.io/badge/Commits_Per_Repo-0-2188FF?style=for-the-badge&logo=git&logoColor=white" />
     </td>
     <td align="center">
-      <img alt="每仓库星标" src="https://img.shields.io/badge/Stars_Per_Repo-160.9-FFD94C?style=for-the-badge&logo=github&logoColor=black" />
+      <img alt="每仓库星标" src="https://img.shields.io/badge/Stars_Per_Repo-161.9-FFD94C?style=for-the-badge&logo=github&logoColor=black" />
     </td>
     <td align="center">
       <img alt="Issue关闭率" src="https://img.shields.io/badge/Issue_Close_Rate-70%25-F74D53?style=for-the-badge&logo=github&logoColor=white" />
@@ -83,7 +83,7 @@
   </tr>
 </table>
 
-<sup>📅 统计更新于: 2025/05/11</sup>
+<sup>📅 统计更新于: 2025/05/18</sup>
 
 </div>
 <!-- END_GITHUB_STATS -->`标记标识）。
