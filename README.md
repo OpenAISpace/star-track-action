@@ -22,7 +22,7 @@
   <tr>
     <td align="center" colspan="4">
       <img alt="GitHub评级" src="https://img.shields.io/badge/Grade-SS-F84?style=for-the-badge&logo=github&logoColor=white" />
-      <img alt="GitHub分数" src="https://img.shields.io/badge/Score-2208-F84?style=for-the-badge&logo=github&logoColor=white" />
+      <img alt="GitHub分数" src="https://img.shields.io/badge/Score-2269-F84?style=for-the-badge&logo=github&logoColor=white" />
     </td>
   </tr>
   <tr>
@@ -41,16 +41,16 @@
   </tr>
   <tr>
     <td align="center">
-      <img alt="仓库数量" src="https://img.shields.io/badge/Repositories-13-26A641?style=for-the-badge&logo=github&logoColor=white" />
+      <img alt="仓库数量" src="https://img.shields.io/badge/Repositories-11-26A641?style=for-the-badge&logo=github&logoColor=white" />
     </td>
     <td align="center">
-      <img alt="获得的星标数" src="https://img.shields.io/badge/Stars-2573-FFD94C?style=for-the-badge&logo=github&logoColor=black" />
+      <img alt="获得的星标数" src="https://img.shields.io/badge/Stars-2691-FFD94C?style=for-the-badge&logo=github&logoColor=black" />
     </td>
     <td align="center">
-      <img alt="Fork数" src="https://img.shields.io/badge/Forked-376-26A641?style=for-the-badge&logo=github&logoColor=white" />
+      <img alt="Fork数" src="https://img.shields.io/badge/Forked-396-26A641?style=for-the-badge&logo=github&logoColor=white" />
     </td>
     <td align="center">
-      <img alt="被Watch数" src="https://img.shields.io/badge/Watched-2573-26A641?style=for-the-badge&logo=github&logoColor=white" />
+      <img alt="被Watch数" src="https://img.shields.io/badge/Watched-2691-26A641?style=for-the-badge&logo=github&logoColor=white" />
     </td>
   </tr>
   <tr>
@@ -72,7 +72,7 @@
       <img alt="每仓库提交" src="https://img.shields.io/badge/Commits_Per_Repo-0-2188FF?style=for-the-badge&logo=git&logoColor=white" />
     </td>
     <td align="center">
-      <img alt="每仓库星标" src="https://img.shields.io/badge/Stars_Per_Repo-197.9-FFD94C?style=for-the-badge&logo=github&logoColor=black" />
+      <img alt="每仓库星标" src="https://img.shields.io/badge/Stars_Per_Repo-244.6-FFD94C?style=for-the-badge&logo=github&logoColor=black" />
     </td>
     <td align="center">
       <img alt="Issue关闭率" src="https://img.shields.io/badge/Issue_Close_Rate-70%25-F74D53?style=for-the-badge&logo=github&logoColor=white" />
@@ -83,7 +83,7 @@
   </tr>
 </table>
 
-<sup>📅 统计更新于: 2025/10/26</sup>
+<sup>📅 统计更新于: 2025/11/02</sup>
 
 </div>
 <!-- END_GITHUB_STATS -->`标记标识）。
